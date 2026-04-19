@@ -14,8 +14,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Set up image upload
-const uploadDir = path.join(__dirname, 'uploads');
+// Set up local-only storage directories
+const dataDir = path.join(__dirname, 'data');
+const uploadDir = path.join(dataDir, 'uploads');
 if (!fs.existsSync(uploadDir)) {
   fs.mkdirSync(uploadDir, { recursive: true });
 }
