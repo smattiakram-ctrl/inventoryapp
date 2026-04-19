@@ -1,0 +1,27 @@
+{
+  "name": "ultimatefinalinventory",
+  "main": "worker.ts",
+  "compatibility_date": "2026-03-30",
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "my-nabil-app",
+      "database_id": "68ab265b-9099-40fd-bef3-26773eb49bc7"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "R2",
+      "bucket_name": "my-nabil-app"
+    }
+  ],
+  "vars": {
+    "GITHUB_CLIENT_ID": "Ov23liwZoxgAkFRJrevF",
+    "GITHUB_CLIENT_SECRET": "e0441cec9ac8b991a26b4448666eeecfe04cebdf"
+  }
+  // ❌ لا تضف GEMINI_API_KEY هنا!
+}
